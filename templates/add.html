@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="{{ url_for('static',filename = 'css/bootstrap.min.css')  }}" rel="stylesheet">
+    <title>Add Seminar Hall</title>
+</head>
+
+<body>
+    <nav style="width: 100%;" class="navbar navbar-dark bg-light">
+        <a class="navbar-brand" href="#" style=" color:salmon; margin-left: 25px;">
+           Dikshant Mali- Midterm 2 Lab Assignment
+        </a>
+    </nav>
+    <div class="container">
+        
+        <hr size="5"/>
+        <br>
+        <h2>Seminar Hall Booking Information</h2>
+    
+    <form action="/savedetails" method="post">
+        <table class="table table-striped table-bordered">
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>Phone number</td>
+                <td><input type="text" name="phonenumber"></td>
+            </tr>
+            <tr>
+                <td>Seminar Hall name</td>
+                <td><input type="text" name="seminarname"></td>
+            </tr>
+            
+            <tr>
+                <td>No. Of Person</td>
+                <td><input type="text" name="noofperson"></td>
+            </tr>
+        </table>
+        <input class="btn btn-success"  type="submit" value="Submit">
+        <hr size="5"/>
+    </form>
+
+
+    </div>
+    
+    
+    <div class="fixed-bottom ">
+        <div class="bg-dark " style="min-height: 40px;">
+    
+            <marquee style="color:#fff; margin-top: 7px;">
+                <h9>Copyright@ Dikshant Mali</h9>
+            </marquee>
+        </div>
+    </div>
+    <!-- change later-->
+    <script src="{{ url_for('static',filename = 'js/bootstrap.bundle.min.js')  }}"></script>
+    </body>
+    
+    </html>
+
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Home Page</title>
+    </head>
+    <body>
+        <nav style="width: 100%;" class="navbar navbar-dark bg-light">
+            <a class="navbar-brand" href="#" style=" color:salmon; margin-left: 25px;">
+               Dikshant Mali- Midterm 2 Lab Assignment
+            </a>
+        </nav>
+        <br><br>
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Seminar Hall Booking</h1>
+                <br><br>
+                <h1>Set: 10 </h1>
+              <p>Create a webpage for Seminar hall booking which includes fields like from date,
+                to date, session include options button for full day or half day, your name, email id
+                ,phone number, Seminar hall name, number of persons to be expected and Purpose
+                of the event. Save all these information on clicking submit button and display page
+                will display booking date wise.</p>
+                <h3>Name: Dikshant Mali</h3>
+                <h3>Reg.No.: PIET18CS049</h3>
+            </div>
+            
+          </div>
+        <div class="container">
+            
+            <hr size="5"/>
+
+                   <center> <a href="/add"><button type="button" class="btn btn-success">Book Seminar Hall</button></a>
+                    <a href="/view"><button type="button" class="btn btn-success">View Booked Hall</button></a>
+                    <a href="/delete"><button type="button" class="btn btn-success">Delete Booked Hall</button></a>
+                    </center>
+                    <hr size="5"/>
+        </div>
+
+        <div class="fixed-bottom ">
+            <div class="bg-dark " style="min-height: 40px;">
+        
+                <marquee style="color:#fff; margin-top: 7px;">
+                    <h9>Copyright@ Dikshant Mali</h9>
+                </marquee>
+            </div>
+        </div>
+        <!-- change later-->
+        <script src="{{ url_for('static',filename = 'js/bootstrap.bundle.min.js')  }}"></script>
+    </body>
+</html>
